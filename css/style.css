@@ -49,7 +49,7 @@ body::-webkit-scrollbar {
 .bigavatar {
 		width: 300px;
     border-radius: 50%;
-    border: 5px #FF015B solid;
+    border: 5px #23272A solid;
     box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
     transform: translatey(0px);
     display: block;
@@ -59,7 +59,7 @@ body::-webkit-scrollbar {
 }
 
 .toptext h1 {
-	color: #FF015B;
+	color: #23272A;
 	font: 700 48px Times New Roman, Times, serif;
 	font-size: 50px;
 }
@@ -115,7 +115,7 @@ footer {
 }
 
 .pink {
-	color: #FF015B;
+	color: #23272A;
 }
 
 .blue {
@@ -193,7 +193,7 @@ footer span {
 }
 
 .docs a i:hover {
-	background-color: #FF015B;
+	background-color: #23272A;
 }
 
 .links {
