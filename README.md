@@ -3,9 +3,9 @@
 Il contient le code source du site publié à cette [adresse](https://carnezenzo.github.io/).
 
 # Composants
-- Jekyll
 - HTML
 - CSS
+- Jekyll
 
 # License
 
