@@ -24,12 +24,6 @@
     if (i != -1) {
       window.location = allposts[i];
     }
-    else {
-      var i = allpostsUpperCase.indexOf('/EN' + url.toUpperCase());
-      if (i != -1) {
-        window.location = allposts[i];
-      }
-    }
   }
   window.onload = redirectToCorrectPage;
 </script>
@@ -160,7 +154,7 @@
 
     .cloud {
         width: 350px; height: 120px;
-        background-image: url("https://i.imgur.com/f6KQZ4q.png");
+        background-color: white;
         background: linear-gradient(top, #FFF 100%);
         background: -webkit-linear-gradient(top, #FFF 100%);
         background: -moz-linear-gradient(top, #FFF 100%);
@@ -180,7 +174,7 @@
     .cloud:after, .cloud:before {
         content: '';
         position: absolute;
-        background-image: url("https://i.imgur.com/g0Pi1hV.png");
+        background-color: white;
         z-index: -1
     }
 
