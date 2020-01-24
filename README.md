@@ -1,12 +1,15 @@
-## Bienvenue sur mon Portlio
+## Welcome on my Portlio
 
-Il contient le code source du site publié à cette [adresse](https://carnezenzo.github.io/).
+This repo contains the code of my website published on this [adress](https://carnezenzo.github.io/).
 
-# Composants
+# Front languages
 - HTML
 - CSS
-- Jekyll
+- JavaScript
+
+# Template Language
+- Liquid (GitHub pages use Jekyll)
 
 # License
 
-Ce projet est licencé par une licence [MIT](./LICENSE).
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details
