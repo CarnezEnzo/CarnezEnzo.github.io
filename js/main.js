@@ -2,8 +2,6 @@
 
 	'use strict';
 
-
-
 	var isMobile = {
 		Android: function() {
 			return navigator.userAgent.match(/Android/i);
@@ -33,15 +31,6 @@
 		});
 
 	};
-
-	var manageCollapse = function() {
-		$('.collapse').on('show.bs.collapse', function () {
-	    $('.collapse.in').each(function(){
-	        $(this).collapse('hide');
-	    });
-	  });
-	}
-
 
 	var counter = function() {
 		$('.js-counter').countTo({
@@ -303,7 +292,6 @@
 		// navActive();
 		navigationSection();
 		// windowScroll();
-		manageCollapse();
 		mobileMenuOutsideClick();
 		sliderMain();
 		stickyFunction();

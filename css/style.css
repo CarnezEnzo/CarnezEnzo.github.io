@@ -1645,3 +1645,26 @@ align-items: stretch;}
     display: block;
   }
 }
+
+.center {
+  text-align: center;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.veille-container {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.thelia {
+  text-align: justify;
+  text-align-last: center;
+  padding: 0 5%;
+  font-size: 1.3em;
+}
