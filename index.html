@@ -86,7 +86,7 @@
 							<div class="col-md-3 animate-box" data-animate-effect="fadeInRight" onClick="getPopup(1)">
 								<div class="services serviceszoom color-2" data-parent="#allrow" role="button">
 									<span class="icon2"><i class="fa fa-code"></i></span>
-									<h3>Web<br> Design</h3>
+									<h3>Développement<br> Web</h3>
 								</div>
 							</div>
 							<div class="col-md-3 animate-box" data-animate-effect="fadeInRight" onClick="getPopup(2)">
@@ -96,7 +96,7 @@
 								</div>
 							</div>
 							<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
-								<div class="services serviceszoom color-4" data-parent="#allrow" role="button" onClick="getPopup(3)">
+								<div class="services serviceszoom color-4" data-parent="#allrow" role="button" onClick="getPopup(3, 'https://upload.wikimedia.org/wikipedia/commons/3/34/Logothelia-2014.png')">
 									<span class="icon2"><i class="fa fa-search"></i></span>
 									<h3>Sujet de<br> Veille</h3>
 								</div>
@@ -112,6 +112,60 @@
 						</div>
             		</div>
         		</div>
+			</div>
+
+			<div id="infos-1" class="hidden veille-container">
+				<div class="web-infos">
+					<h3 class="center underline">Mes projets</h3>
+
+					<div class="table-responsive">
+						<table class="table info-table">
+							<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">Nom</th>
+								<th scope="col">Date</th>
+								<th scope="col">Lien</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>Réalisation d'un site en PHP</td>
+								<td>04/02/2020</td>
+								<td>carnezenzo.github.io</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<div id="infos-2" class="hidden veille-container">
+				<div class="web-infos">
+					<h3 class="center underline">Mes projets</h3>
+
+					<div class="table-responsive">
+						<table class="table info-table">
+							<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">Nom</th>
+								<th scope="col">Date</th>
+								<th scope="col">Lien</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>Réalisation d'un bot Discord</td>
+								<td>2016 - 2020</td>
+								<td>watora.xyz</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
 			</div>
 
 			<div id="infos-3" class="hidden veille-container">
@@ -134,7 +188,7 @@
 					</p>
 				</div>
 
-				<img class="crop-cms" src="https://www.reussir-mon-ecommerce.fr/wp-content/uploads/2016/10/infographie-top-10-cms-ecommerce.png">
+				<img class="crop-cms col-xs-12" src="https://www.reussir-mon-ecommerce.fr/wp-content/uploads/2016/10/infographie-top-10-cms-ecommerce.png">
 			</div>
 
     </section>
@@ -378,14 +432,14 @@
 	<script src="js/main.js"></script>
 
 	<script type= text/javascript>
-		function getPopup(id) {
+		function getPopup(id, imgurl = null) {
 			return Swal.fire({
 				html: document.getElementById("infos-" + id).innerHTML,
-				imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/3/34/Logothelia-2014.png',
+				imageUrl: imgurl,
 				imageWidth: 400,
 				imageHeight: 200,
-				imageAlt: 'Thelia logo',
-				width: '70%',
+				imageAlt: 'Logo',
+				width: '90%',
 				showCloseButton: true,
 				showConfirmButton: false,
 				background: '#23272A'
