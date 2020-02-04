@@ -77,45 +77,44 @@
 							</div>
                 		</div>
 						<div id="allrow" class="row">
-				              <div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+<!--				              <div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
 				                    <div class="services serviceszoom color-5" data-parent="#allrow" role="button" onClick="getPopup(1)">
 										<span class="icon2"><i class="fa fa-desktop"></i></span>
 										<h3>Profil de<br>Développement</h3>
 									</div>
-				              </div>
-							<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
-								<div class="services serviceszoom color-2" data-parent="#allrow" data-toggle="collapse" href="#collapseDesigning" role="button" aria-expanded="false" aria-controls="collapseDesigning">
+				              </div>-->
+							<div class="col-md-3 animate-box" data-animate-effect="fadeInRight" onClick="getPopup(1)">
+								<div class="services serviceszoom color-2" data-parent="#allrow" role="button">
 									<span class="icon2"><i class="fa fa-code"></i></span>
 									<h3>Web<br> Design</h3>
 								</div>
 							</div>
-							<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
-								<div class="services serviceszoom color-3" data-parent="#allrow" data-toggle="collapse" href="#collapseSoftware" role="button" aria-expanded="false" aria-controls="collapseSoftware">
+							<div class="col-md-3 animate-box" data-animate-effect="fadeInRight" onClick="getPopup(2)">
+								<div class="services serviceszoom color-3" data-parent="#allrow" role="button">
 									<span class="icon2"><i class="fa fa-terminal"></i></span>
 									<h3>Développement<br> d'applications</h3>
 								</div>
 							</div>
 							<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
-								<div class="services serviceszoom color-4" data-parent="#allrow" data-toggle="collapse" href="#collapseVeille" role="button" aria-expanded="false" aria-controls="collapseVeille">
+								<div class="services serviceszoom color-4" data-parent="#allrow" role="button" onClick="getPopup(3)">
 									<span class="icon2"><i class="fa fa-search"></i></span>
 									<h3>Sujet de<br> Veille</h3>
 								</div>
 							</div>
-							<div class="row">
-								<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-									<div class="hire">
-										<h2>J'ai déjà terminé quelques projets, n'hésitez pas à jeter un œil à mon CV!</h2>
-										<a target="_blank" href="./resume.pdf" class="btn-hire" style="text-align: center;">Télécharger mon CV</a>
-									</div>
+                		</div>
+						<div class="row">
+							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+								<div class="hire">
+									<h2>J'ai déjà terminé quelques projets, n'hésitez pas à jeter un œil à mon CV!</h2>
+									<a target="_blank" href="./resume.pdf" class="btn-hire" style="text-align: center;">Télécharger mon CV</a>
 								</div>
 							</div>
-                		</div>
+						</div>
             		</div>
         		</div>
 			</div>
 
-			<div id="infos-1" class="hidden veille-container">
-				<!--<h2 class="center underline">Présentation de Thélia</h2>-->
+			<div id="infos-3" class="hidden veille-container">
 				<div class="thelia">
 					<p class="thelia intro">
 						Thelia est un outil de création de sites e-commerce et de gestion de contenu en ligne publié sous licence libre.
@@ -381,7 +380,6 @@
 	<script type= text/javascript>
 		function getPopup(id) {
 			return Swal.fire({
-				type: 'text',
 				html: document.getElementById("infos-" + id).innerHTML,
 				imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/3/34/Logothelia-2014.png',
 				imageWidth: 400,
