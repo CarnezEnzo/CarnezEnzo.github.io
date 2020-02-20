@@ -1711,5 +1711,8 @@ align-items: stretch;}
 }
 
 .thelia-content {
-  margin-bottom: 2em;
+}
+
+.flex-reverse {
+  flex-direction: row-reverse;
 }
