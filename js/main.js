@@ -24,12 +24,16 @@
 	};
 
 	var fullHeight = function() {
-
-		$('.js-fullheight').css('height', $(window).height());
-		$(window).resize(function(){
-			$('.js-fullheight').css('height', $(window).height());
+		$('.js-fullheight').each(function() {
+			let elem = $(this)
+			let remove = elem.data().remove;
+			if (!remove)
+				remove = 0;
+			elem.css('height', $(window).height() - remove);
+			$(window).resize(function() {
+				elem.css('height', $(window).height()-remove);
+			});
 		});
-
 	};
 
 	var counter = function() {
