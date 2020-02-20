@@ -170,26 +170,44 @@
 
 			<div id="infos-3" class="hidden veille-container">
 				<div class="thelia">
-					<div class="thelia-intro js-fullheight" data-remove="245">
+					<div class="thelia-intro js-fullheight" data-remove="345">
 						<p>
 							Thelia est un outil de création de sites e-commerce et de gestion de contenu en ligne publié sous licence libre.
-							Thelia se distingue des applications concurrentes par sa facilité de personnalisation et d’utilisation.
+							Thelia se distingue des applications concurrentes par son ancienneté et son nombre disponibles de modules.
+							Crée en 2006, c'est en 2012 que OpenStudio reprend son édition, ce CMS est encore régulièrement mis à jour.
 						</p>
 					</div>
 
-					<div class="thelia-cms">
-						<p class="center underline">Qu'est-ce qu'un CMS</p>
-						<img class="thelia-cms-img" src="https://doofindermedia.s3.amazonaws.com/blog/2018/09/10/082234-cms-tienda-online-1.jpg"/>
-						<p class="thelia-cms-text">
+					<div class="thelia-content">
+						<p class="center underline thelia-title">Qu'est-ce qu'un CMS</p>
+						<div class="thelia-main-content">
+							<img class="thelia-cms-img" src="https://doofindermedia.s3.amazonaws.com/blog/2018/09/10/082234-cms-tienda-online-1.jpg"/>
+							<p class="thelia-cms-text">
 
-						CMS est l’acronyme de content management system, soit, en français, « système de gestion de contenu ». Il s’agit d’un programme informatique utilisant une base de données et permettant de gérer de A et Z l’apparence et le contenu d’un site web.
+							CMS est l’acronyme de content management system, soit, en français, « système de gestion de contenu ». Il s’agit d’un programme informatique utilisant une base de données et permettant de gérer de A et Z l’apparence et le contenu d’un site web.
 
-						Il permet, à des individus ou à des groupes hiérarchisés, de mettre à jour le contenu d’un site web à partir d’un panneau d’administration.
+							Il permet, à des individus ou à des groupes hiérarchisés, de mettre à jour le contenu d’un site web à partir d’un panneau d’administration.
 
-						Aujourd’hui, le CMS est une plate-forme de déploiement de sites web très populaires,
-						permettant de créer des sites web complexes à moindre coût, grâce aux nombreux CMS Open Source existant sur le marché.
-						C’est de ces CMS dont nous allons parler, car même s’il existe des CMS payants, la grosse majorité des CMS déployés sont Open Source.
-					</p>
+							Aujourd’hui, le CMS est une plate-forme de déploiement de sites web très populaire,
+							permettant de créer des sites web complexes à moindre coût, grâce aux nombreux CMS Open Source existant sur le marché.
+						</p>
+					</div>
+				</div>
+
+				<div class="thelia-content">
+					<p class="center underline thelia-title">Qu'est-ce que l'Open Source</p>
+						<div class="thelia-main-content">
+							<img class="thelia-cms-img" src="https://www.ajcact.org/files/sites/160/2018/10/open-source.png"/>
+							<p class="thelia-cms-text">
+
+							CMS est l’acronyme de content management system, soit, en français, « système de gestion de contenu ». Il s’agit d’un programme informatique utilisant une base de données et permettant de gérer de A et Z l’apparence et le contenu d’un site web.
+
+							Il permet, à des individus ou à des groupes hiérarchisés, de mettre à jour le contenu d’un site web à partir d’un panneau d’administration.
+
+							Aujourd’hui, le CMS est une plate-forme de déploiement de sites web très populaire,
+							permettant de créer des sites web complexes à moindre coût, grâce aux nombreux CMS Open Source existant sur le marché.
+						</p>
+					</div>
 				</div>
 
 				<!-- <img class="crop-cms col-xs-12" src="https://www.reussir-mon-ecommerce.fr/wp-content/uploads/2016/10/infographie-top-10-cms-ecommerce.png"> -->
@@ -440,8 +458,7 @@
 			return Swal.fire({
 				html: document.getElementById("infos-" + id).innerHTML,
 				imageUrl: imgurl,
-				imageWidth: 400,
-				imageHeight: 200,
+				imageHeight: 300,
 				imageAlt: 'Logo',
 				width: '90%',
 				showCloseButton: true,

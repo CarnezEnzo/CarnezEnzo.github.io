@@ -1686,9 +1686,30 @@ align-items: stretch;}
   float: right;
   margin: 0 30px;
   border: 5px white solid;
+  width: 50%;
+}
+
+.thelia-cms-text {
+  width: 50%;
 }
 
 .veille-img {
   height: 500px;
+}
 
+.thelia-title {
+  font-size: 3em;
+}
+
+.thelia-intro {
+  font-size: 1.5em;
+}
+
+.thelia-main-content {
+  display: flex;
+  align-items: center;
+}
+
+.thelia-content {
+  margin-bottom: 2em;
 }
