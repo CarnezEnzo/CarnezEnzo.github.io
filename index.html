@@ -212,7 +212,7 @@
 
 					<div id="infos-3" class="hidden veille-container">
 						<div class="thelia">
-							<div class="thelia-intro js-fullheight" data-once="1" data-remove="300">
+							<div class="thelia-intro js-fullheight" data-once="1" data-remove="400">
 								<p>
 									Thelia est un outil de création de sites e-commerce et de gestion de contenu en ligne publié sous licence libre.
 									Thelia se distingue des applications concurrentes par son ancienneté et son nombre disponibles de modules.
@@ -558,7 +558,7 @@
 					remove = 0;
 				}
 				if (once) {
-					elem.css('margin-bottom', Math.max(0, $(window).height() - remove - elem.height()));
+					elem.css('margin-bottom', Math.max(0, $(window).height() - remove - 35 - elem.height()));
 				}
 			});
 
