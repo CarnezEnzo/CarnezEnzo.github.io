@@ -27,11 +27,30 @@
 		$('.js-fullheight').each(function() {
 			let elem = $(this)
 			let remove = elem.data().remove;
+			let once = elem.data().once;
 			if (!remove)
 				remove = 0;
-			elem.css('height', $(window).height() - remove);
+			if (!once) {
+				elem.css('height', Math.max(0, $(window).height() - remove));
+			}
+			else {
+				elem.css('margin-bottom', Math.max(0, $(window).height() - remove - elem.height()));
+			}
+
 			$(window).resize(function() {
-				elem.css('height', $(window).height()-remove);
+				$('.js-fullheight').each(function() {
+					let elem = $(this)
+					let remove = elem.data().remove;
+					let once = elem.data().once;
+					if (!remove)
+						remove = 0;
+					if (!once) {
+							elem.css('height', Math.max(0, $(window).height() - remove));
+					}
+					else {
+						elem.css('margin-bottom', Math.max(0, $(window).height() - remove - elem.height()));
+					}
+				});
 			});
 		});
 	};

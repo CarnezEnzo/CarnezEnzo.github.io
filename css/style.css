@@ -1687,6 +1687,7 @@ align-items: stretch;}
   margin: 0 30px;
   border: 5px white solid;
   width: 50%;
+  max-height: 1000px;
 }
 
 .thelia-cms-text {
@@ -1715,4 +1716,23 @@ align-items: stretch;}
 
 .flex-reverse {
   flex-direction: row-reverse;
+}
+
+.thelia-cms-double-img img {
+  margin: auto;
+}
+
+@media screen and (max-width: 770px)
+{
+  .flex-reverse {
+    flex-direction: column;
+  }
+
+  .thelia-main-content {
+    flex-direction: column;
+  }
+
+  .thelia-cms-img {
+    margin: 0;
+  }
 }

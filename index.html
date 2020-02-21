@@ -170,7 +170,7 @@
 
 			<div id="infos-3" class="hidden veille-container">
 				<div class="thelia">
-					<div class="thelia-intro js-fullheight" data-remove="345">
+					<div class="thelia-intro js-fullheight" data-once="1" data-remove="345">
 						<p>
 							Thelia est un outil de création de sites e-commerce et de gestion de contenu en ligne publié sous licence libre.
 							Thelia se distingue des applications concurrentes par son ancienneté et son nombre disponibles de modules.
@@ -178,13 +178,14 @@
 						</p>
 					</div>
 
-					<div class="thelia-content js-fullheight">
+					<div class="thelia-content js-fullheight" data-once="1">
 						<p class="center underline thelia-title">Qu'est-ce qu'un CMS</p>
 						<div class="thelia-main-content">
-							<img class="thelia-cms-img" src="https://doofindermedia.s3.amazonaws.com/blog/2018/09/10/082234-cms-tienda-online-1.jpg"/>
+							<img class="thelia-cms-img" src="images/cms.jpg"/>
 							<p class="thelia-cms-text">
 
-							CMS est l’acronyme de content management system, soit, en français, « système de gestion de contenu ». Il s’agit d’un programme informatique utilisant une base de données et permettant de gérer de A et Z l’apparence et le contenu d’un site web.
+							CMS est l’acronyme de content management system, soit, en français, « système de gestion de contenu ».
+							Il s’agit d’un programme informatique utilisant une base de données et permettant de gérer de A et Z l’apparence et le contenu d’un site web.
 
 							Il permet, à des individus ou à des groupes hiérarchisés, de mettre à jour le contenu d’un site web à partir d’un panneau d’administration.
 
@@ -194,25 +195,72 @@
 					</div>
 				</div>
 
-				<div class="thelia-content js-fullheight">
+				<div class="thelia-content js-fullheight" data-once="1">
 					<p class="center underline thelia-title">Qu'est-ce que l'Open Source</p>
-						<div class="thelia-main-content ">
-							<img class="thelia-cms-img" src="https://www.pulsar-informatique.com/images/open-source/OpenSource1.jpg"/>
+						<div class="thelia-main-content flex-reverse">
+							<img class="thelia-cms-img" src="images/opensource.jpg"/>
 							<p class="thelia-cms-text">
 
-							CMS est l’acronyme de content management system, soit, en français, « système de gestion de contenu ». Il s’agit d’un programme informatique utilisant une base de données et permettant de gérer de A et Z l’apparence et le contenu d’un site web.
-
-							Il permet, à des individus ou à des groupes hiérarchisés, de mettre à jour le contenu d’un site web à partir d’un panneau d’administration.
-
-							Aujourd’hui, le CMS est une plate-forme de déploiement de sites web très populaire,
-							permettant de créer des sites web complexes à moindre coût, grâce aux nombreux CMS Open Source existant sur le marché.
+							Thélia est publié en Open Source, c'est à dire que le code source du CMS est accessible par tous.
+							En général, les logiciels Open Source sont publiés avec une licence qui décrit les conditions d'exploitation du code.
+							Thélia est publié sous la licence GNU LESSER GENERAL PUBLIC LICENSE (GNU LGPL) de 2007. En comparaison, Magento et Prestashop utilisent une licence OSL-3.0. Woocommerce (plugin worldpress) utilise une licence GNUv3
 						</p>
 					</div>
+				</div>
+
+				<div class="thelia-content js-fullheight" data-once="1">
+					<p class="center underline thelia-title">Les CMS les plus utilisés en France</p>
+						<div class="thelia-main-content thelia-cms-double-img">
+							<img class="thelia-cms-img" src="images/top-cms-france-debut.png"/>
+							<img class="thelia-cms-img" src="images/top-cms-france-fin.png"/>
+					</div>
+				</div>
+
+				<div class="thelia-content js-fullheight" data-once="1">
+					<p class="center underline thelia-title">Les CMS les plus utilisés en France</p>
+						<div class="thelia-main-content thelia-cms-double-img">
+							<img class="thelia-cms-img" src="images/cms-parts-marche.png"/>
+							<img class="thelia-cms-img" src="images/cms-parts-marche-zoom.png"/>
+					</div>
+				</div>
+
+				<div class="thelia-content js-fullheight" data-once="1">
+					<p class="center underline thelia-title">Notoriété de Thélia</p>
+						<div class="thelia-main-content flex-reverse thelia-cms-double-img">
+							<img class="thelia-cms-img" src="images/thelia-concurence-ecrasante.png"/>
+							<img class="thelia-cms-img" src="images/thelia-evolution.png"/>
+					</div>
+				</div>
+
+				<div class="thelia-content js-fullheight" data-once="1">
+					<p class="center underline thelia-title">Les problèmes de Thélia</p>
+						<div class="thelia-main-content">
+							<img class="thelia-cms-img" src="images/twig.jpg"/>
+							<p class="thelia-cms-text">
+								Thélia est un CMS qui n'a pas su s'imposer malgré les années, il utilise encore des technologies anciennes comme Smarty,
+								et ne supporte pas encore les nouveaux outils comme Twig (moteur de template) ou les versions les plus récentes comme Symfony2
+								(alors que son concurrent français utilise Symfony3) ou encore PHP5 au lieu de PHP7.
+							</p>
+						</div>
+				</div>
+
+				<div class="thelia-content js-fullheight" data-once="1">
+					<p class="center underline thelia-title">Les points forts de Thélia</p>
+						<div class="thelia-main-content">
+							<a style="width: 50%;" href="https://github.com/thelia-modules"><img style="width: 100%;" class="thelia-cms-img" src="images/thelia-modules.png"/></a>
+							<p class="thelia-cms-text">
+								Cependant, malgré son ancienneté, Thelia a évolué en mettant plus ou moins rapidement à jour ses technologies, il utilise
+								aujourd'hui Jquery pour permettre l'utilisation d'ajax, PHP5 et Symfony2. Il compte également des centaines de modules en open source.
+								J'ai eu l'occasion d'en développer certains, comme un module de
+								<a href="https://github.com/thelia-modules/AbandonedCartReminder">gestion des paniers abandonnés,</a> un module de
+								<a href="https://github.com/CarnezEnzo/AdminBarcodeScanner"> scan de code-barres,</a>
+								et de contribuer à l'amélioration et à la correction de <a href="https://github.com/CarnezEnzo">nombreux autres modules sur mon GitHub</a> (ainsi que certains non open source).
+							</p>
+						</div>
 				</div>
 
 				<!-- <img class="crop-cms col-xs-12" src="https://www.reussir-mon-ecommerce.fr/wp-content/uploads/2016/10/infographie-top-10-cms-ecommerce.png"> -->
 			</div>
-
     </section>
 
         <!-- Skills -->
@@ -383,7 +431,7 @@
 										 <h2>Stage en entreprise <span>Janvier 2020 - Fevrier 2020</span></h2>
 										 <p><strong class="blue">Développeur Full Stack</strong><br>Le projet du stage concernait le développement de plusieurs modules pour des sites de e-commerce basé sur Thelia.
 											 <br>Il a été réalisé à l'aide de:
-											 <br>- PHP (Symfony & Smarty)
+											 <br>- PHP5 (Symfony2 & Smarty)
 											 <br>- JavaScript (JQuery).
 											 <br>- HTML/CSS (Bootstrap)
 										 </p>
@@ -418,7 +466,8 @@
                                     <a href="https://twitter.com/CarnezEnzo" style="color: white;" class="fa fa-twitter"></a> &nbsp;&nbsp;&nbsp;&nbsp;
                                     <a href="https://www.linkedin.com/in/enzo-carnez/" style="color: white;" class="fa fa-linkedin"></a> &nbsp;&nbsp;&nbsp;&nbsp;
                                     <!--<a href="https://www.quora.com/profile/CARNEZEnzo" style="color: black;" class="fa fa-quora"></a> &nbsp;&nbsp;&nbsp;&nbsp; -->
-                                    <a href="https://github.com/carnezenzo" style="color: white;" class="fa fa-github"></a>
+                                    <a href="https://github.com/carnezenzo" style="color: white;" class="fa fa-github"></a> &nbsp;&nbsp;&nbsp;&nbsp;
+																		<a href="https://github.com/zenrac" style="color: white;" class="fa fa-github-alt"></a>
                                 </p>
                             </div>
                                 <p style="text-align: center; margin-bottom: -20px;"><strong>&copy; CARNEZ Enzo - Portfolio</strong></p>
