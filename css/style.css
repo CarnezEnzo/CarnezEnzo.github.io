@@ -78,8 +78,9 @@ h3 {
   margin: 0 0 30px 0;
 }
 
-th {
+td, th {
   text-align: center;
+  vertical-align: middle !important;
 }
 
 figure {
@@ -2230,7 +2231,13 @@ body.offcanvas #colorlib-main, body.offcanvas .colorlib-nav-toggle {
   align-items: center;
 }
 
-.thelia-content {}
+.icon-link {
+  font-size: 1.5em;
+}
+
+.icon-link a {
+  color: white;
+}
 
 .flex-reverse {
   flex-direction: row-reverse;
