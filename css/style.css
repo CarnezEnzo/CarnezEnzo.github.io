@@ -2169,6 +2169,18 @@ body.offcanvas #colorlib-main, body.offcanvas .colorlib-nav-toggle {
   }
 }
 
+@media (max-width: 400px) {
+	.services {
+		padding: 0.8em
+	}
+}
+
+@media (min-width: 300px) {
+  #allrow .col-md-3 {
+	width: 33%;
+  }
+}
+
 .center {
   text-align: center;
 }
