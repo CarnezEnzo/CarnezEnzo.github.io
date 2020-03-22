@@ -2304,3 +2304,16 @@ body.offcanvas #colorlib-main, body.offcanvas .colorlib-nav-toggle {
     animation: octocat-wave 560ms ease-in-out
   }
 }
+
+table.dataTable tbody tr {
+    background: unset;
+}
+
+select.input-sm {
+  line-height: unset;
+}
+
+.pagination .disabled a, .pagination .disabled a:focus, .pagination .disabled a:hover {
+  color: unset;
+  background-color: unset;
+}

@@ -20,6 +20,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway&display=swap" rel="stylesheet">
 
+	<!-- DataTable -->
+	<link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Bootstrap  -->
@@ -123,7 +126,7 @@
 							<h3 class="center underline">Mes projets Web</h3>
 
 							<div class="table-responsive">
-								<table class="table info-table">
+								<table id="table-id-1" class="table info-table">
 									<thead>
 										<tr>
 											<th scope="col">#</th>
@@ -161,7 +164,7 @@
 							<h3 class="center underline">Mes projets d'Application</h3>
 
 							<div class="table-responsive">
-								<table class="table info-table">
+								<table id="table-id-2" class="table info-table">
 									<thead>
 										<tr>
 											<th scope="col">#</th>
@@ -529,6 +532,10 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@1/dark.css">
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8/dist/sweetalert2.min.js"></script>
 
+	<!-- DataTable -->
+	<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap.min.js"></script>
+
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
 
@@ -557,6 +564,10 @@
 					elem.css('margin-bottom', Math.max(0, $(window).height() - remove - 35 - elem.height()));
 				}
 			});
+
+			$('.swal2-popup .info-table').attr('id', 'table-' + id)
+
+			$('#table-' + id).DataTable();
 
 			$('.swal2-popup').focus();
 
