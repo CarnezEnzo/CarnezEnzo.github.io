@@ -2317,3 +2317,15 @@ select.input-sm {
   color: unset;
   background-color: unset;
 }
+
+.table-responsive .form-control {
+    background-color: #23272A;
+}
+
+.form-control:active, .form-control:focus {
+  background-color: #2C2F33;
+}
+
+.form-control {
+  color: unset;
+}
