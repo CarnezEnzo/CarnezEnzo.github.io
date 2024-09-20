@@ -13,15 +13,18 @@
 	<!--Social Media icons-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<!--Flag icons-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css">
+
+	<!-- Place favicon.ico in the root directory -->
 	<link rel="icon" type="image/png" href="logo.png">
 
-	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway&display=swap" rel="stylesheet">
+	<link href="fonts/quicksand.css" rel="stylesheet">
+	<link href="fonts/playfair.css" rel="stylesheet">
+	<link href="fonts/raleway.css" rel="stylesheet">
 
 	<!-- DataTable -->
-	<link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+	<link href="css/datatables.css" rel="stylesheet">
 
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
@@ -35,13 +38,14 @@
 	<link rel="stylesheet" href="css/style.css">
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!--Bootstrap select-->
+	<link rel="stylesheet" href="css/bootstrap-select.css">
 </head>
 
 <body>
 	<div id="colorlib-page">
 		<div class="container-wrap">
 			<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-
 			<!-- Side bar -->
 			<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
 				<div class="text-center">
@@ -51,10 +55,14 @@
 				</div>
 				<nav id="colorlib-main-menu" role="navigation" class="navbar">
 					<div id="navbar" class="collapse">
-						<ul>
-							<li><a href="#" data-nav-section="about">Présentation</a></li>
-							<li><a href="#" data-nav-section="skills">Compétences</a></li>
-							<li><a href="#" data-nav-section="experience">Expérience</a></li>
+						<ul id="navmenus">
+							<li class="navmenu"><a href="#" data-key="about" data-nav-section="about">Présentation</a></li>
+							<li class="navmenu"><a href="#" data-key="skills" data-nav-section="skills">Compétences</a></li>
+							<li class="navmenu"><a href="#" data-key="experience" data-nav-section="experience">Expérience</a></li>
+							<select class="selectpickerx" data-width="fit">
+								<option data-content='<span class="flag-icon flag-icon-us"></span> English'>en</option>
+								  <option data-content='<span class="flag-icon flag-icon-fr"></span> French'>fr</option>
+							</select>
 						</ul>
 					</div>
 				</nav>
@@ -83,37 +91,39 @@
 								<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
 									<div class="col-md-12">
 										<div class="about-desc">
-											<h2>Présentation</h2>
-											<hr>
-											<p>Je suis Enzo, un jeune développeur français.<br>J'aime créer de nouvelles choses et toujours aller plus loin dans mes créations.</p>
+											<h2 data-key="about">Présentation</h2>
+											<p>
+												<span data-key="about-short">Je suis Enzo, un jeune développeur français.</span><br />
+												<span data-key="about-details">J'aime créer de nouvelles choses et toujours aller plus loin dans mes créations.</span>
+											</p>
 										</div>
 									</div>
 								</div>
 								<div id="allrow" class="row">
-									<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+									<div class="col-md-3 animate-box docsbots" data-animate-effect="fadeInRight">
 										<div class="services serviceszoom color-2" data-parent="#allrow" role="button">
 											<span class="icon2"><i class="fa fa-code"></i></span>
-											<h3>Développement<br> Web</h3>
+											<h3 data-key="development-web">Développement<br> Web</h3>
 										</div>
 									</div>
-									<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+									<div class="col-md-3 animate-box docsbots" data-animate-effect="fadeInRight">
 										<div class="services serviceszoom color-3" data-parent="#allrow" role="button">
 											<span class="icon2"><i class="fa fa-terminal"></i></span>
-											<h3>Développement<br> d'applications</h3>
+											<h3 data-key="development-app">Développement<br> d'applications</h3>
 										</div>
 									</div>
-									<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
+									<div onclick="getPopup(1)" class="col-md-3 animate-box" data-animate-effect="fadeInRight">
 										<div class="services serviceszoom color-4" data-parent="#allrow" role="button">
 											<span class="icon2"><i class="fa fa-search"></i></span>
-											<h3>Sujet de<br> Veille</h3>
+											<h3 data-key="searchings">Sujet de<br> Veille</h3>
 										</div>
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
 										<div class="hire">
-											<h2>J'ai déjà terminé quelques projets, n'hésitez pas à jeter un œil à mon CV!</h2>
-											<a target="_blank" href="https://drive.google.com/file/d/1C4rcE5jStuGkz-EjsAtTqoor1nbVcbbL/view?usp=sharing" class="btn-hire" style="text-align: center;">Télécharger mon CV</a>
+											<h2 data-key="endline">J'ai déjà terminé quelques projets, n'hésitez pas à jeter un œil à mon CV!</h2>
+											<a target="_blank" data-key="download-button" href="https://drive.google.com/file/d/1C4rcE5jStuGkz-EjsAtTqoor1nbVcbbL/view?usp=sharing" class="btn-hire" style="text-align: center;">Télécharger mon CV</a>
 										</div>
 									</div>
 								</div>
@@ -123,45 +133,7 @@
 
 					<div id="infos-1" class="hidden veille-container">
 						<div class="web-infos">
-							<h3 class="center underline">Mes projets Web</h3>
-
-							<div class="table-responsive">
-								<table id="table-id-1" class="table info-table">
-									<thead>
-										<tr>
-											<th scope="col">#</th>
-											<th scope="col">Nom</th>
-											<th scope="col">Date</th>
-											<th scope="col">Lien</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<th scope="row">1</th>
-											<td>Réalisation d'un site en JS</td>
-											<td>04/02/2020</td>
-											<td class="icon-link">
-												<a href="https://github.com/CarnezEnzo/CarnezEnzo.github.io" target="_blank" class="fa fa-github"></a>
-												<a href="https://carnezenzo.github.io" target="_blank" class="fa fa-globe"></a>
-											</td>
-										</tr>
-										<tr>
-											<th scope="row">2</th>
-											<td>Réalisation d'un site en PHP</td>
-											<td>04/02/2020</td>
-											<td class="icon-link">
-												<a href="https://github.com/CarnezEnzo/POP-Corn" target="_blank" class="fa fa-github"></a>
-											</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
-					</div>
-
-					<div id="infos-2" class="hidden veille-container">
-						<div class="web-infos">
-							<h3 class="center underline">Mes projets d'Application</h3>
+							<h3 class="center underline">Mes sujets de veille</h3>
 
 							<div class="table-responsive">
 								<table id="table-id-2" class="table info-table">
@@ -179,7 +151,7 @@
 											<td>Réalisation d'un bot Discord</td>
 											<td>2016 - 2020</td>
 											<td class="icon-link">
-												<a href="https://watora.xyz" target="_blank" class="fa fa-globe"></a>
+												<a href="https://watorabot.github.io/" target="_blank" class="fa fa-globe"></a>
 												<a href="https://github.com/Zenrac/Watora" target="_blank" class="fa fa-github"></a>
 											</td>
 										</tr>
@@ -199,117 +171,28 @@
 												<a href="https://github.com/CarnezEnzo/NotesFrais" target="_blank" class="fa fa-github"></a>
 											</td>
 										</tr>
+										<tr>
+											<th scope="row">4</th>
+											<td>Réalisation d'un site en JS (celui-ci)</td>
+											<td>2020 - 2024</td>
+											<td class="icon-link">
+												<a href="https://github.com/CarnezEnzo/CarnezEnzo.github.io" target="_blank" class="fa fa-github"></a>
+												<a href="https://carnezenzo.github.io" target="_blank" class="fa fa-globe"></a>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">5</th>
+											<td>Réalisation d'un site en PHP</td>
+											<td>2020</td>
+											<td class="icon-link">
+												<a href="https://github.com/CarnezEnzo/POP-Corn" target="_blank" class="fa fa-github"></a>
+											</td>
+										</tr>
 									</tbody>
 								</table>
 							</div>
 						</div>
 					</div>
-
-					<div id="infos-3" class="hidden veille-container">
-						<div class="thelia">
-							<div class="thelia-intro js-fullheight" data-once="1" data-remove="400">
-								<p>
-									Thelia est un outil de création de sites e-commerce et de gestion de contenu en ligne publié sous licence libre.
-									Thelia se distingue des applications concurrentes par son ancienneté et son nombre disponibles de modules.
-									Crée en 2006, c'est en 2012 que OpenStudio reprend son édition, ce CMS est encore régulièrement mis à jour.
-								</p>
-							</div>
-
-							<div class="thelia-content js-fullheight" data-once="1">
-								<p class="center underline thelia-title">Qu'est-ce qu'un CMS</p>
-								<div class="thelia-main-content">
-									<img class="thelia-cms-img" src="images/cms.jpg" />
-									<p class="thelia-cms-text">
-
-										CMS est l’acronyme de content management system, soit, en français, « système de gestion de contenu ».
-										Il s’agit d’un programme informatique utilisant une base de données et permettant de gérer de A et Z l’apparence et le contenu d’un site web.
-
-										Il permet, à des individus ou à des groupes hiérarchisés, de mettre à jour le contenu d’un site web à partir d’un panneau d’administration.
-
-										Aujourd’hui, le CMS est une plate-forme de déploiement de sites web très populaire,
-										permettant de créer des sites web complexes à moindre coût, grâce aux nombreux CMS Open Source existant sur le marché.
-									</p>
-								</div>
-							</div>
-
-							<div class="thelia-content js-fullheight" data-once="1">
-								<p class="center underline thelia-title">Qu'est-ce que l'Open Source</p>
-								<div class="thelia-main-content flex-reverse">
-									<img class="thelia-cms-img" src="images/opensource.jpg" />
-									<p class="thelia-cms-text">
-
-										Thélia est publié en Open Source, c'est à dire que le code source du CMS est accessible par tous.
-										En général, les logiciels Open Source sont publiés avec une licence qui décrit les conditions d'exploitation du code.
-										Thélia est publié sous la licence GNU LESSER GENERAL PUBLIC LICENSE (GNU LGPL) de 2007. En comparaison, Magento et Prestashop utilisent une licence OSL-3.0. Woocommerce (plugin worldpress) utilise une licence GNUv3
-									</p>
-								</div>
-							</div>
-
-							<div class="thelia-content js-fullheight" data-once="1">
-								<p class="center underline thelia-title">Les CMS les plus utilisés en France</p>
-								<div class="thelia-main-content thelia-cms-double-img">
-									<img class="thelia-cms-img" src="images/top-cms-france-debut.png" />
-									<img class="thelia-cms-img" src="images/top-cms-france-fin.png" />
-								</div>
-							</div>
-
-							<div class="thelia-content js-fullheight" data-once="1">
-								<p class="center underline thelia-title">Les CMS les plus utilisés en France</p>
-								<div class="thelia-main-content thelia-cms-double-img">
-									<img class="thelia-cms-img" src="images/cms-parts-marche.png" />
-									<img class="thelia-cms-img" src="images/cms-parts-marche-zoom.png" />
-								</div>
-							</div>
-
-							<div class="thelia-content js-fullheight" data-once="1">
-								<p class="center underline thelia-title">Notoriété de Thélia</p>
-								<div class="thelia-main-content flex-reverse thelia-cms-double-img">
-									<img class="thelia-cms-img" src="images/thelia-concurence-ecrasante.png" />
-									<img class="thelia-cms-img" src="images/thelia-evolution.png" />
-								</div>
-							</div>
-
-							<div class="thelia-content js-fullheight" data-once="1">
-								<p class="center underline thelia-title">Les problèmes de Thélia</p>
-								<div class="thelia-main-content flex-reverse">
-									<img class="thelia-cms-img" src="images/twig.jpg" />
-									<p class="thelia-cms-text">
-										Thélia est un CMS qui n'a pas su s'imposer malgré les années, il utilise encore des technologies anciennes comme Smarty Propel,
-										et ne supporte pas encore les nouveaux outils comme Twig (moteur de template) ou les versions les plus récentes comme Symfony2
-										(alors que son concurrent français utilise Symfony3) ou encore PHP5 au lieu de PHP7.
-									</p>
-								</div>
-							</div>
-
-							<div class="thelia-content js-fullheight" data-once="1">
-								<p class="center underline thelia-title">Les points forts de Thélia</p>
-								<div class="thelia-main-content">
-									<a style="width: 50%;" href="https://github.com/thelia-modules"><img style="width: 100%;" class="thelia-cms-img" src="images/thelia-modules.png" /></a>
-									<p class="thelia-cms-text">
-										Cependant, malgré son ancienneté, Thelia a évolué en mettant plus ou moins rapidement à jour ses technologies, il utilise
-										aujourd'hui Jquery pour permettre l'utilisation d'ajax, PHP5 et Symfony2. Il compte également des centaines de modules en open source.
-										J'ai eu l'occasion d'en développer certains, comme un module de
-										<a href="https://github.com/thelia-modules/AbandonedCartReminder">gestion des paniers abandonnés,</a> un module de
-										<a href="https://github.com/CarnezEnzo/AdminBarcodeScanner"> scan de code-barres,</a>
-										et de contribuer à l'amélioration et à la correction de <a href="https://github.com/CarnezEnzo">nombreux autres modules sur mon GitHub</a> (ainsi que certains non open source).
-									</p>
-								</div>
-							</div>
-
-							<div class="thelia-content js-fullheight" data-once="1">
-								<p class="center underline thelia-title">Conclusion</p>
-								<div class="thelia-main-content">
-									<img class="thelia-cms-img" src="images/lapelerine.png" />
-									<p class="thelia-cms-text">
-										Comme expliqué précedemment, Thélia est un CMS qui n'a pas su s'imposer face à ses concurrents lors
-										des dix dernières années. Néanmoins il reste un outil idéal pour les entreprises qui cherchent une solution
-										rapide et simple pour leurs projets, qui n'a rien à envier aux autres. De plus, en travaillant directement avec
-										l'équipe d'Open Studio qui est spécialisé dans son CMS, il est possible de demander la réalisation de modules
-										très spécifiques et d'améliorer grandement la personnalisation de Thélia.
-									</p>
-								</div>
-							</div>
-						</div>
 				</section>
 
 				<!-- Skills -->
@@ -318,15 +201,15 @@
 					<div class="colorlib-narrow-content">
 						<div class="row">
 							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-								<h2>Compétences</h2>
+								<h2 data-key="skills">Compétences</h2>
 								<hr>
 							</div>
 						</div>
-						<p class="animate-box" data-animate-effect="fadeInRight">Voici une liste non exhaustive de mes différentes compétences.</p>
+						<p data-key="skills-resume" data-key="endline" class="animate-box" data-animate-effect="fadeInRight">Voici une liste non exhaustive de mes différentes compétences.</p>
 						<div class="row">
 							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
 								<div class="progress-wrap">
-									<h3 style="font-weight: 500;">C#</h3>
+									<h3 style="font-weight: 500;">.NET (C#, Blazor, MAUI)</h3>
 									<div class="progress">
 										<div class="progress-bar color-1" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
 											<span>80%</span>
@@ -415,7 +298,7 @@
 					<div class="colorlib-narrow-content">
 						<div class="row">
 							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-								<h2>Expérience</h2>
+								<h2 data-key="experience">Expérience</h2>
 								<hr>
 							</div>
 						</div>
@@ -430,10 +313,10 @@
 											</div>
 
 											<div class="timeline-label">
-												<h2>CDI chez CGI <span>Juillet 2021</span></h2>
-												<p><strong class="blue">Développeur C#</strong><br>
-													Prestataire chez un client pour effectuer diverses missions d'informatique "industrielle".
-													<br>- C# (.NET6, Blazor)
+												<h2 data-key="cdi-cgi">CDI chez CGI <span>Juillet 2021</span></h2>
+												<p><strong class="blue" data-key="csharp-dev">Développeur C#</strong><br>
+													<span data-key="dev-cgi-resume">Prestataire chez un client pour effectuer diverses missions d'informatique "industrielle".</span>
+													<br>- C# (.NET6, Blazor, MAUI)
 													<br>- Oracle
 													<br>- HTML/CSS (Tailwind)
 												</p>
@@ -488,7 +371,7 @@
 											</div>
 
 											<div class="timeline-label">
-												<h2>Stage en entreprise <span>Mai 2019 - Juin 2019</span></h2>
+												<h2>Stage chez Institut Lumière Matière <span>Mai 2019 - Juin 2019</span></h2>
 												<p><strong class="blue">Développeur Full Stack</strong><br>Le projet du stage concernait le développement d'un site web professionnel de gestion de l'université Lyon 1.
 													<br>Il a été réalisé à l'aide de:
 													<br>- Python (Django et Django REST framework)
@@ -507,7 +390,7 @@
 											</div>
 
 											<div class="timeline-label">
-												<h2><a href="http://watora.xyz/" target="_blank">Création d'un bot Discord</a> <span>Juillet 2017 - 2020</span></h2>
+												<h2><a href="https://watorabot.github.io/" target="_blank">Création d'un bot Discord</a> <span>Juillet 2017 - 2020</span></h2>
 												<p><strong class="blue">Développeur principal</strong>
 													<br>Il s'agit de mon plus grand projet à ce jour, il mobilise quasiment l'ensemble de mes compétences.
 													<br>C'est un projet entièrement asynchrone open source, et possédant de nombreuses dépendances codées par moi-même ou auxquelles j'ai contribués.
@@ -537,7 +420,7 @@
 							<div class="col-md-12">
 								<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInRight">
 									<div class="hire">
-										<p style="text-align: center"><strong>Si vous avez quelconque question, n'hésitez pas à me contacter.<br>Merci d'avoir visité mon site !</strong></p>
+										<p style="text-align: center"><strong data-key="end-short">Si vous avez quelconque question, n'hésitez pas à me contacter.<br>Merci d'avoir visité mon site !</strong></p>
 										<div align=center>
 											<p style="font-size: 35px; cursor: default; margin-bottom: 0px;">
 												<a href="https://twitter.com/CarnezEnzo" style="color: white;" class="fa fa-twitter"></a> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -571,52 +454,19 @@
 	<script src="js/jquery.flexslider-min.js"></script>
 	<!-- Counters -->
 	<script src="js/jquery.countTo.js"></script>
+	<!-- Bootstrap select -->
+	<script src="js/bootstrap-select.js"></script>
 
 	<!-- Sweetalert2 -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@1/dark.css">
-	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8/dist/sweetalert2.min.js"></script>
+	<link rel="stylesheet" href="css/sweetalert2-dark.css">
+	<script src="js/sweetalert2.js"></script>
 
 	<!-- DataTable -->
-	<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
-	<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap.min.js"></script>
+	<script src="js/jquery-datatables.js"></script>
+	<script src="js/dataTables.js"></script>
 
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
-
-	<script type=text/javascript>
-		function getPopup(id, imgurl = null) {
-
-			Swal.fire({
-				html: document.getElementById("infos-" + id).innerHTML,
-				imageUrl: imgurl,
-				imageHeight: 300,
-				imageAlt: 'Logo',
-				width: '90%',
-				showCloseButton: true,
-				showConfirmButton: false,
-				background: '#23272A'
-			});
-
-			$('.js-fullheight').each(function() {
-				let elem = $(this)
-				let remove = elem.data().remove;
-				let once = elem.data().once;
-				if (!remove) {
-					remove = 0;
-				}
-				if (once) {
-					elem.css('margin-bottom', Math.max(0, $(window).height() - remove - 35 - elem.height()));
-				}
-			});
-
-			$('.swal2-popup .info-table').attr('id', 'table-' + id)
-
-			$('#table-' + id).DataTable();
-
-			$('.swal2-popup').focus();
-
-		};
-	</script>
 
 </body>
 

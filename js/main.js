@@ -262,7 +262,88 @@
     // windowScroll();
     mobileMenuOutsideClick();
     sliderMain();
+
+    $(function(){
+      $('.selectpickerx').selectpicker();
+      var selectElement = $('.selectpickerx')[0];
+      selectElement.addEventListener('change', function() {
+          changeLang(selectElement.value);
+      });
+      var userLang = (navigator.language || navigator.userLanguage).split('-')[0];
+      selectElement.value = userLang;
+      selectElement.dispatchEvent(new Event('change'));
+    });
+  });
+}());
+
+function changeLang(lang) {
+  loadTranslations(lang, function(translations) {
+    document.querySelectorAll('[data-key]').forEach(el => {
+      const key = el.getAttribute('data-key');
+      el.innerHTML = translations[key];
+      if (key == "download-button") {
+        el.href = translations["resume-url"];
+      }
+    });
+    document.documentElement.setAttribute('lang', lang);
+  });
+}
+
+function loadTranslations(lang, callback) {
+  fetch('i18n/' + lang + '.json')
+      .then(response => {
+          if (!response.ok) {
+              throw new Error('Erreur de chargement des traductions');
+          }
+          return response.json();
+      })
+      .then(callback)
+      .catch(error => console.error('Erreur :', error));
+}
+
+
+function getPopup(id, imgurl = null) {
+
+  Swal.fire({
+    html: document.getElementById("infos-" + id).innerHTML,
+    imageUrl: imgurl,
+    imageHeight: 300,
+    imageAlt: 'Logo',
+    width: '90%',
+    showCloseButton: true,
+    showConfirmButton: false,
+    background: '#23272A'
   });
 
+  $('.js-fullheight').each(function() {
+    let elem = $(this)
+    let remove = elem.data().remove;
+    let once = elem.data().once;
+    if (!remove) {
+      remove = 0;
+    }
+    if (once) {
+      elem.css('margin-bottom', Math.max(0, $(window).height() - remove - 35 - elem.height()));
+    }
+  });
 
-}());
+  $('.swal2-popup .info-table').attr('id', 'table-' + id)
+
+  $('#table-' + id).DataTable();
+
+  $('.swal2-popup').focus();
+
+};
+
+$('.docsbots').on('click', function(e) {
+  Swal.fire({
+  width: 600,
+  html: "<div class='botimgs'><figure class='btn hover animation'><a href='https://watorabot.github.io'><img class='botwatora' src='./images/watora.png'/><figcaption class='figcapwatora'> Watora </figcaption></a></figure><figure class='btn hover animation'><a href='https://meetcord.github.io'><img class='botmeet' src='./images/meetcord.png'/><figcaption class='figcapmeet'> meetcord </figcaption></a></figure></div>",
+  imageWidth: 500,
+  imageAlt: 'My bots',
+  background: '#202225',
+  showCloseButton: true,
+  showCancelButton: false,
+  showConfirmButton: false,
+  })
+});

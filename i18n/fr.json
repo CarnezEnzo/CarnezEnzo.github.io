@@ -1,0 +1,23 @@
+{
+    "about" : "Présentation",
+    "skills" : "Compétences",
+    "experience" : "Experiences",
+
+    "about-short" : "Je m'appelle Enzo, développeur passionné basé en France.",
+    "about-details" : "Toujours animé par la curiosité et l'innovation, j'aime concevoir des solutions créatives et repousser les limites de mes projets.",
+
+    "development-web" : "Développement<br> Web",
+    "development-app" : "Développement<br> d'applications",
+    "searchings" : "Sujet de<br> Veille",
+
+    "download-button" : "Télécharger mon CV",
+    "resume-url" : "https://drive.google.com/file/d/1C4rcE5jStuGkz-EjsAtTqoor1nbVcbbL/view?usp=sharing",
+
+    "dev-cgi-resume" : "Prestataire chez un client pour effectuer diverses missions d'informatique \"industrielle\".",
+    "csharp-dev" : "Développeur C#",
+    "cdi-cgi" : "CDI chez CGI <span>Juillet 2021</span>",
+
+    "endline" : "J'ai déjà terminé quelques projets, n'hésitez pas à jeter un œil à mon CV!",
+    "skills-resume" : "Voici une liste non exhaustive de mes différentes compétences.",
+    "end-short" : "Si vous avez quelconque question, n'hésitez pas à me contacter.<br>Merci d'avoir visité mon site !"
+}

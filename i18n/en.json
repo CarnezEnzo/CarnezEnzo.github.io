@@ -1,0 +1,24 @@
+{
+    "about" : "Resume",
+    "skills" : "Skills",
+    "experience" : "Experiences",
+
+    "about-short" : "My name is Enzo, a passionate developer based in France",
+    "about-details" : "Driven by curiosity and innovation, I love crafting creative solutions and pushing the boundaries of my projects.",
+
+    "development-web" : "Web<br> Development",
+    "development-app" : "Application<br> development",
+    "searchings" : "Monitoring<br> Topics",
+
+    "download-button" : "Download my resume",
+    "resume-url" : "https://drive.google.com/file/d/1_cGCCEXri60SYtvDdD6wNRvasmniGHdO/view?usp=sharing",
+
+    "dev-cgi-resume" : "Service provider for a client to carry out various industrial IT tasks.",
+    "csharp-dev" : "C# Developer",
+    "cdi-cgi" : "Full-Time Work at CGI <span>Juillet 2021</span>",
+
+
+    "endline" : "I have already completed several projects, feel free to take a look at my resume!",
+    "skills-resume" : "Here’s a non-exhaustive overview of my skills.",
+    "end-short" : "If you have any questions, feel free to contact me.<br>Thank you for visiting my website!"
+}
