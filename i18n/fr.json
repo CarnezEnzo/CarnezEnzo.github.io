@@ -15,9 +15,29 @@
 
     "dev-cgi-resume" : "Prestataire chez un client pour effectuer diverses missions d'informatique \"industrielle\".",
     "csharp-dev" : "Développeur C#",
-    "cdi-cgi" : "CDI chez CGI <span>Juillet 2021</span>",
 
     "endline" : "J'ai déjà terminé quelques projets, n'hésitez pas à jeter un œil à mon CV!",
     "skills-resume" : "Voici une liste non exhaustive de mes différentes compétences.",
-    "end-short" : "Si vous avez quelconque question, n'hésitez pas à me contacter.<br>Merci d'avoir visité mon site !"
+    "end-short" : "Si vous avez quelconque question, n'hésitez pas à me contacter.<br>Merci d'avoir visité mon site !",
+
+    "name" : "Nom",
+    "date" : "Date",
+    "link" : "Lien",
+    "made-discord-bot" : "Réalisation d'un bot Discord",
+    "made-auto" : "Réalisation d'une application de gestionnaire automobile",
+    "made-expense-report" : "Réalisation d'une application de gestion de notes de frais",
+    "made-website-js" : "Réalisation d'un site en JS (celui-ci)",
+    "made-website-php" : "Réalisation d'un site en PHP",
+
+    "training-cgi" : "Stage chez CGI <span>Mars 2021 - Juillet 2021</span>",
+    "cdi-cgi" : "CDI chez CGI <span>Juillet 2021</span>",
+    "opensource-dev" : "Développeur C# OpenSource",
+    "opensource-details" : "Le projet du stage concernait le développement de fonctionnalités pour un générateur d'application CRUD en .NET.",
+    "openstudio-details" : "Le projet du stage concernait le développement d'un site web professionnel de gestion de l'université Lyon 1.<br>Il a été réalisé à l'aide de:",
+    "training-openstudio" : "Stage chez OpenStudio <span>Janvier 2020 - Fevrier 2020</span>",
+    "training-lumiere" : "Stage chez Institut Lumière Matière <span>Mai 2019 - Juin 2019</span>",
+    "training-bot" : "Création d'un bot Discord</a> <span>Juillet 2017 - 2020</span>",
+    "bot-details" : "Il s'agit de mon plus grand projet à ce jour, il mobilise quasiment l'ensemble de mes compétences.<br>C'est un projet entièrement asynchrone open source, et possédant de nombreuses dépendances codées par moi-même ou auxquelles j'ai contribués.<br><br>Ce projet est disponible sur mon GitHub.",
+    "main-dev" : "Développeur principal",
+    "fullstack-dev" : "Développeur Full Stack"
 }

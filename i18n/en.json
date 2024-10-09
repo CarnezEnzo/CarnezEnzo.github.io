@@ -15,10 +15,29 @@
 
     "dev-cgi-resume" : "Service provider for a client to carry out various industrial IT tasks.",
     "csharp-dev" : "C# Developer",
-    "cdi-cgi" : "Full-Time Work at CGI <span>Juillet 2021</span>",
-
 
     "endline" : "I have already completed several projects, feel free to take a look at my resume!",
     "skills-resume" : "Here’s a non-exhaustive overview of my skills.",
-    "end-short" : "If you have any questions, feel free to contact me.<br>Thank you for visiting my website!"
+    "end-short" : "If you have any questions, feel free to contact me.<br>Thank you for visiting my website!",
+
+    "name" : "Name",
+    "date" : "Date",
+    "link" : "Link",
+    "made-discord-bot" : "Creation of a Discord bot",
+    "made-auto" : "Creation of an automotive management application",
+    "made-expense-report" : "Creation of an expense report management application",
+    "made-website-js" : "Creation of a website in JavaScript (this one)",
+    "made-website-php" : "Creation of a website in PHP",
+
+    "training-cgi" : "Internship at CGI <span>March 2021 - July 2021</span>",
+    "cdi-cgi" : "Full-Time Work at CGI <span>July 2021</span>",
+    "opensource-dev" : "C# OpenSource Developer",
+    "opensource-details" : "The internship project involved developing features for a CRUD application generator in .NET.",
+    "openstudio-details" : "The internship project involved developing several modules for websites based on Thelia, an e-commerce CMS developed by OpenStudio.<br>It was carried out using:",
+    "training-openstudio" : "Internship at OpenStudio <span>January 2020 - February 2020</span>",
+    "training-lumiere" : "Internship at Institut Lumière Matière <span>May 2019 - June 2019</span>",
+    "training-bot" : "Creation of a Discord bot</a> <span>July 2017 - 2020</span>",
+    "bot-details" : "This is my largest project to date, it mobilizes almost all of my skills.<br>It is a fully asynchronous open-source project, with many dependencies coded by myself or to which I have contributed.<br><br>This project is available on my GitHub.",
+    "main-dev" : "Lead Developer",
+    "fullstack-dev" : "Full Stack Developer"
 }

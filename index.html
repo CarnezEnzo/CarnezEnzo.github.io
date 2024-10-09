@@ -91,7 +91,7 @@
 								<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
 									<div class="col-md-12">
 										<div class="about-desc">
-											<h2 data-key="about">Présentation</h2>
+											<h2 class="align-text" data-key="about">Présentation</h2>
 											<p>
 												<span data-key="about-short">Je suis Enzo, un jeune développeur français.</span><br />
 												<span data-key="about-details">J'aime créer de nouvelles choses et toujours aller plus loin dans mes créations.</span>
@@ -140,15 +140,15 @@
 									<thead>
 										<tr>
 											<th scope="col">#</th>
-											<th scope="col">Nom</th>
-											<th scope="col">Date</th>
-											<th scope="col">Lien</th>
+											<th data-key="name" scope="col">Nom</th>
+											<th data-key="date" scope="col">Date</th>
+											<th data-key="link" scope="col">Lien</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
 											<th scope="row">1</th>
-											<td>Réalisation d'un bot Discord</td>
+											<td data-key="made-discord-bot">Réalisation d'un bot Discord</td>
 											<td>2016 - 2020</td>
 											<td class="icon-link">
 												<a href="https://watorabot.github.io/" target="_blank" class="fa fa-globe"></a>
@@ -157,7 +157,7 @@
 										</tr>
 										<tr>
 											<th scope="row">2</th>
-											<td>Réalisation d'une application de gestionnaire automobile</td>
+											<td data-key="made-auto">Réalisation d'une application de gestionnaire automobile</td>
 											<td>2020</td>
 											<td class="icon-link">
 												<a href="https://github.com/CarnezEnzo/OccazAuto" target="_blank" class="fa fa-github"></a>
@@ -165,7 +165,7 @@
 										</tr>
 										<tr>
 											<th scope="row">3</th>
-											<td>Réalisation d'une application de gestion de notes de frais</td>
+											<td data-key="made-expense-report">Réalisation d'une application de gestion de notes de frais</td>
 											<td>2020</td>
 											<td class="icon-link">
 												<a href="https://github.com/CarnezEnzo/NotesFrais" target="_blank" class="fa fa-github"></a>
@@ -173,7 +173,7 @@
 										</tr>
 										<tr>
 											<th scope="row">4</th>
-											<td>Réalisation d'un site en JS (celui-ci)</td>
+											<td data-key="made-website-js">Réalisation d'un site en JS (celui-ci)</td>
 											<td>2020 - 2024</td>
 											<td class="icon-link">
 												<a href="https://github.com/CarnezEnzo/CarnezEnzo.github.io" target="_blank" class="fa fa-github"></a>
@@ -182,7 +182,7 @@
 										</tr>
 										<tr>
 											<th scope="row">5</th>
-											<td>Réalisation d'un site en PHP</td>
+											<td data-key="made-website-php">Réalisation d'un site en PHP</td>
 											<td>2020</td>
 											<td class="icon-link">
 												<a href="https://github.com/CarnezEnzo/POP-Corn" target="_blank" class="fa fa-github"></a>
@@ -201,7 +201,7 @@
 					<div class="colorlib-narrow-content">
 						<div class="row">
 							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-								<h2 data-key="skills">Compétences</h2>
+								<h2 class="align-text" data-key="skills">Compétences</h2>
 								<hr>
 							</div>
 						</div>
@@ -219,6 +219,16 @@
 							</div>
 							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
 								<div class="progress-wrap">
+									<h3 style="font-weight: 500;">Git (Gitlab, Github)</h3>
+									<div class="progress">
+										<div class="progress-bar color-5" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+											<span>70%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+								<div class="progress-wrap">
 									<h3 style="font-weight: 500;">Python3</h3>
 									<div class="progress">
 										<div class="progress-bar color-3" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
@@ -229,7 +239,7 @@
 							</div>
 							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
 								<div class="progress-wrap">
-									<h3 style="font-weight: 500;">JavaScript</h3>
+									<h3 style="font-weight: 500;">JavaScript (VueJS, JQuery, Ionic)</h3>
 									<div class="progress">
 										<div class="progress-bar color-2" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
 											<span>50%</span>
@@ -249,7 +259,7 @@
 							</div>
 							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
 								<div class="progress-wrap">
-									<h3 style="font-weight: 500;">MySQL/MongoDB</h3>
+									<h3 style="font-weight: 500;">MySQL/MongoDB/Oracle</h3>
 									<div class="progress">
 										<div class="progress-bar color-6" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
 											<span>50%</span>
@@ -259,29 +269,19 @@
 							</div>
 							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
 								<div class="progress-wrap">
-									<h3 style="font-weight: 500;">Django/Liquid/Smarty</h3>
+									<h3 style="font-weight: 500;">Java/Kotlin/Android</h3>
 									<div class="progress">
-										<div class="progress-bar color-5" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%">
-											<span>30%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3 style="font-weight: 500;">Git</h3>
-									<div class="progress">
-										<div class="progress-bar color-7" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
-											<span>50%</span>
+										<div class="progress-bar color-5" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:20%">
+											<span>40%</span>
 										</div>
 									</div>
 								</div>
 							</div>
 							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
 								<div class="progress-wrap">
-									<h3 style="font-weight: 500;">Java/Kotlin/Android</h3>
+									<h3 style="font-weight: 500;">Django/Liquid/Smarty</h3>
 									<div class="progress">
-										<div class="progress-bar color-3" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:20%">
+										<div class="progress-bar color-3" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%">
 											<span>20%</span>
 										</div>
 									</div>
@@ -298,7 +298,7 @@
 					<div class="colorlib-narrow-content">
 						<div class="row">
 							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-								<h2 data-key="experience">Expérience</h2>
+								<h2 class="align-text" data-key="experience">Expérience</h2>
 								<hr>
 							</div>
 						</div>
@@ -316,7 +316,7 @@
 												<h2 data-key="cdi-cgi">CDI chez CGI <span>Juillet 2021</span></h2>
 												<p><strong class="blue" data-key="csharp-dev">Développeur C#</strong><br>
 													<span data-key="dev-cgi-resume">Prestataire chez un client pour effectuer diverses missions d'informatique "industrielle".</span>
-													<br>- C# (.NET6, Blazor, MAUI)
+													<br>- C# (.NET5+, Blazor, MAUI)
 													<br>- Oracle
 													<br>- HTML/CSS (Tailwind)
 												</p>
@@ -332,9 +332,9 @@
 											</div>
 
 											<div class="timeline-label">
-												<h2>Stage chez CGI <span>Mars 2021 - Juillet 2021</span></h2>
-												<p><strong class="blue">Développeur C# OpenSource</strong><br>
-													Le projet du stage concernait le développement de fonctionnalités pour un générateur d'application CRUD en .NET.
+												<h2 data-key="training-cgi">Stage chez CGI <span>Mars 2021 - Juillet 2021</span></h2>
+												<p><strong class="blue" data-key="opensource-dev">Développeur C# OpenSource</strong><br>
+													<span data-key="opensource-details">Le projet du stage concernait le développement de fonctionnalités pour un générateur d'application CRUD en .NET.</span>
 													<br>- C# (.NET6, Blazor, Xamarin)
 													<br>- MongoDB
 													<br>- CQRS
@@ -351,10 +351,9 @@
 											</div>
 
 											<div class="timeline-label">
-												<h2><a href="https://www.openstudio.fr/" target="_blank">Stage chez OpenStudio <span>Janvier 2020 - Fevrier 2020</span></a></h2>
-												<p><strong class="blue">Développeur Full Stack</strong><br>Le projet du stage concernait le développement de
-													plusieurs modules pour des sites web basés sur Thelia, un CMS d'e-commerce développé par OpenStudio.
-													<br>Il a été réalisé à l'aide de:
+												<h2><a href="https://www.openstudio.fr/" data-key="training-openstudio" target="_blank">Stage chez OpenStudio <span>Janvier 2020 - Fevrier 2020</span></a></h2>
+												<p><strong class="blue" data-key="fullstack-dev">Développeur Full Stack</strong><br>
+													<span data-key="openstudio-details">Le projet du stage concernait le développement de plusieurs modules pour des sites web basés sur Thelia, un CMS d'e-commerce développé par OpenStudio.<br>Il a été réalisé à l'aide de:</span>
 													<br>- PHP5 (Symfony2 & Smarty)
 													<br>- JavaScript (JQuery).
 													<br>- HTML/CSS (Bootstrap)
@@ -371,11 +370,11 @@
 											</div>
 
 											<div class="timeline-label">
-												<h2>Stage chez Institut Lumière Matière <span>Mai 2019 - Juin 2019</span></h2>
-												<p><strong class="blue">Développeur Full Stack</strong><br>Le projet du stage concernait le développement d'un site web professionnel de gestion de l'université Lyon 1.
-													<br>Il a été réalisé à l'aide de:
-													<br>- Python (Django et Django REST framework)
-													<br>- JavaScript (JQuery et VueJS).
+												<h2 data-key="training-lumiere">Stage chez Institut Lumière Matière <span>Mai 2019 - Juin 2019</span></h2>
+												<p><strong class="blue" data-key="fullstack-dev">Développeur Full Stack</strong><br>
+													<span data-key="openstudio-details">Le projet du stage concernait le développement d'un site web professionnel de gestion de l'université Lyon 1.<br>Il a été réalisé à l'aide de:</span>
+													<br>- Python (Django & Django REST framework)
+													<br>- JavaScript (JQuery & VueJS).
 													<br>- HTML/CSS (Bootstrap)
 												</p>
 												<p></p>
@@ -390,11 +389,9 @@
 											</div>
 
 											<div class="timeline-label">
-												<h2><a href="https://watorabot.github.io/" target="_blank">Création d'un bot Discord</a> <span>Juillet 2017 - 2020</span></h2>
-												<p><strong class="blue">Développeur principal</strong>
-													<br>Il s'agit de mon plus grand projet à ce jour, il mobilise quasiment l'ensemble de mes compétences.
-													<br>C'est un projet entièrement asynchrone open source, et possédant de nombreuses dépendances codées par moi-même ou auxquelles j'ai contribués.
-													<br><br>Ce projet est disponible sur mon <a href="https://github.com/Zenrac/Watora" target="_blank">GitHub.</a></p>
+												<h2><a href="https://watorabot.github.io/" data-key="training-bot" target="_blank">Création d'un bot Discord</a> <span>Juillet 2017 - 2020</span></h2>
+												<p><strong class="blue" data-key="main-dev">Développeur principal</strong><br>
+													<span data-key="bot-details">Il s'agit de mon plus grand projet à ce jour, il mobilise quasiment l'ensemble de mes compétences.<br>C'est un projet entièrement asynchrone open source, et possédant de nombreuses dépendances codées par moi-même ou auxquelles j'ai contribués.<br><br>Ce projet est disponible sur mon <a href="https://github.com/Zenrac/Watora" target="_blank">GitHub.</a></p></span>
 												<p></p>
 											</div>
 										</div>
