@@ -9,12 +9,13 @@
 	<meta name="description" content="Portfolio webpage of CARNEZ Enzo" />
 	<meta name="keywords" content="portfolio,website,personal website,github" />
 	<meta name="author" content="CARNEZ Enzo" />
+    <meta name="darkreader-lock" content="true">
 
 	<!--Social Media icons-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<!--Flag icons-->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.8.0/css/flag-icons.min.css">
 
 	<!-- Place favicon.ico in the root directory -->
 	<link rel="icon" type="image/png" href="logo.png">
@@ -50,7 +51,7 @@
 			<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
 				<div class="text-center">
 					<div class="author-img" style="background-image: url(images/avatar.png);"></div>
-					<h1 id="colorlib-logo"><a href="https://github.com/CarnezEnzo/CarnezEnzo.github.io">CARNEZ Enzo</a></h1>
+					<h1 id="colorlib-logo"><a data-key="myname" href="https://github.com/CarnezEnzo/CarnezEnzo.github.io">CARNEZ Enzo</a></h1>
 					<p><strong></strong></p>
 				</div>
 				<nav id="colorlib-main-menu" role="navigation" class="navbar">
@@ -60,8 +61,9 @@
 							<li class="navmenu"><a href="#" data-key="skills" data-nav-section="skills">Compétences</a></li>
 							<li class="navmenu"><a href="#" data-key="experience" data-nav-section="experience">Expérience</a></li>
 							<select class="selectpickerx" data-width="fit">
-								<option data-content='<span class="flag-icon flag-icon-us"></span> English'>en</option>
-								  <option data-content='<span class="flag-icon flag-icon-fr"></span> French'>fr</option>
+								<option data-content='<span class="fi fi-us"></span> English'>en</option>
+								<option data-content='<span class="fi fi-fr"></span> French'>fr</option>
+								<option data-content='<span class="fi fi-jp"></span> Japanese'>jp</option>
 							</select>
 						</ul>
 					</div>
@@ -133,7 +135,7 @@
 
 					<div id="infos-1" class="hidden veille-container">
 						<div class="web-infos">
-							<h3 class="center underline">Mes sujets de veille</h3>
+							<h3 data-key="mysubjects" class="center underline">Mes sujets de veille</h3>
 
 							<div class="table-responsive">
 								<table id="table-id-2" class="table info-table">
@@ -427,7 +429,7 @@
 												<a href="https://github.com/zenrac" style="color: white;" class="fa fa-github-alt"></a>
 											</p>
 										</div>
-										<p style="text-align: center; margin-bottom: -20px;"><strong>&copy; CARNEZ Enzo - Portfolio</strong></p>
+										<p style="text-align: center; margin-bottom: -20px;"><strong>&copy; <span data-key="myname">CARNEZ Enzo</span><span data-key="portfolio"> - Portfolio</span></strong></p>
 									</div>
 								</div>
 							</div>

@@ -1,0 +1,47 @@
+{
+    "about" : "概要",
+    "skills" : "スキル",
+    "experience" : "経験",
+
+    "about-short" : "私の名前はエンゾ、フランス在住の情熱的な開発者です",
+    "about-details" : "好奇心と革新心に駆られ、創造的なソリューションを作り、プロジェクトの限界を押し広げることが大好きです。",
+
+    "development-web" : "ウェブ<br>開発",
+    "development-app" : "アプリケーション<br>開発",
+    "searchings" : "監視<br>トピック",
+
+    "download-button" : "履歴書をダウンロード",
+    "resume-url" : "https://drive.google.com/file/d/1hSsQn7unUVWzBgWHT2daq4DBqpCx9ZfF/view?usp=drive_link",
+
+    "dev-cgi-resume" : "クライアント向けにさまざまな産業用IT業務を行うサービス提供者",
+    "csharp-dev" : "C#開発者",
+
+    "endline" : "すでにいくつかのプロジェクトを完了しています。ぜひ私の履歴書をご覧ください！",
+    "skills-resume" : "以下は私のスキルの一部です（網羅的ではありません）。",
+    "end-short" : "ご質問があれば、お気軽にお問い合わせください。<br>ウェブサイトをご覧いただき、ありがとうございます！",
+
+    "name" : "名前",
+    "date" : "日付",
+    "link" : "リンク",
+    "made-discord-bot" : "Discordボットの作成",
+    "made-auto" : "自動車管理アプリケーションの作成",
+    "made-expense-report" : "経費管理アプリケーションの作成",
+    "made-website-js" : "JavaScriptでのウェブサイト作成（このサイト）",
+    "made-website-php" : "PHPでのウェブサイト作成",
+
+    "training-cgi" : "CGIでのインターンシップ <span>2021年3月 - 2021年7月</span>",
+    "cdi-cgi" : "CGIでのフルタイム勤務 <span>2021年7月</span>",
+    "opensource-dev" : "C#オープンソース開発者",
+    "opensource-details" : "インターンシップのプロジェクトでは、.NETでCRUDアプリケーションジェネレーターの機能開発を行いました。",
+    "openstudio-details" : "インターンシップのプロジェクトでは、OpenStudioが開発したEC向けCMS「Thelia」に基づく複数のモジュールを開発しました。<br>使用技術：",
+    "training-openstudio" : "OpenStudioでのインターンシップ <span>2020年1月 - 2020年2月</span>",
+    "training-lumiere" : "Institut Lumière Matièreでのインターンシップ <span>2019年5月 - 2019年6月</span>",
+    "training-bot" : "Discordボットの作成 <span>2017年7月 - 2020年</span>",
+    "bot-details" : "これまでで最大のプロジェクトであり、ほぼすべてのスキルを動員しています。<br>完全に非同期のオープンソースプロジェクトで、多くの依存関係は自分で開発したか、貢献しました。<br><br>このプロジェクトはGitHubで公開しています。",
+    "main-dev" : "リード開発者",
+    "fullstack-dev" : "フルスタック開発者",
+    "mysubjects" : "私の監視トピック",
+
+    "myname": "カルネズエンゾ (CARNEZ Enzo)",
+    "portfolio": " - ポートフォリオ"
+}

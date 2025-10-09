@@ -39,5 +39,9 @@
     "training-bot" : "Création d'un bot Discord</a> <span>Juillet 2017 - 2020</span>",
     "bot-details" : "Il s'agit de mon plus grand projet à ce jour, il mobilise quasiment l'ensemble de mes compétences.<br>C'est un projet entièrement asynchrone open source, et possédant de nombreuses dépendances codées par moi-même ou auxquelles j'ai contribués.<br><br>Ce projet est disponible sur mon GitHub.",
     "main-dev" : "Développeur principal",
-    "fullstack-dev" : "Développeur Full Stack"
+    "fullstack-dev" : "Développeur Full Stack",
+    "mysubjects" : "Mes sujets de veille",
+
+    "myname": "CARNEZ Enzo",
+    "portfolio": " - Portfolio"
 }
