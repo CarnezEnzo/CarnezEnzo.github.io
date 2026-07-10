@@ -78,42 +78,40 @@
   };
 
   // Animations
-  var contentWayPoint = function() {
-    var i = 0;
-    $('.animate-box').waypoint(function(direction) {
-
-      if (direction === 'down' && !$(this.element).hasClass('animated')) {
-
-        i++;
-
-        $(this.element).addClass('item-animate');
-        setTimeout(function() {
-
-          $('body .animate-box.item-animate').each(function(k) {
-            var el = $(this);
-            setTimeout(function() {
-              var effect = el.data('animate-effect');
-              if (effect === 'fadeIn') {
-                el.addClass('fadeIn animated');
-              } else if (effect === 'fadeInLeft') {
-                el.addClass('fadeInLeft animated');
-              } else if (effect === 'fadeInRight') {
-                el.addClass('fadeInRight animated');
-              } else {
-                el.addClass('fadeInUp animated');
-              }
-
-              el.removeClass('item-animate');
-            }, k * 200, 'easeInOutExpo');
-          });
-
-        }, 100);
-
+  var processAnimateBoxes = function() {
+    $('.animate-box').each(function() {
+      var el = $(this);
+      if (el.hasClass('animated') || el.hasClass('item-animate')) {
+        return;
       }
 
-    }, {
-      offset: '85%'
+      var rect = this.getBoundingClientRect();
+      var triggerOffset = window.innerHeight * 0.85;
+
+      if (rect.top <= triggerOffset && rect.bottom >= 0) {
+        el.addClass('item-animate');
+        setTimeout(function() {
+          var effect = el.data('animate-effect');
+          if (effect === 'fadeIn') {
+            el.addClass('fadeIn animated');
+          } else if (effect === 'fadeInLeft') {
+            el.addClass('fadeInLeft animated');
+          } else if (effect === 'fadeInRight') {
+            el.addClass('fadeInRight animated');
+          } else {
+            el.addClass('fadeInUp animated');
+          }
+
+          el.removeClass('item-animate');
+        }, 100);
+      }
     });
+  };
+
+  var contentWayPoint = function() {
+    processAnimateBoxes();
+    $(window).on('scroll resize load', processAnimateBoxes);
+    window.triggerAnimateBoxes = processAnimateBoxes;
   };
 
 
@@ -269,23 +267,44 @@
       selectElement.addEventListener('change', function() {
           changeLang(selectElement.value);
       });
-      var userLang = (navigator.language || navigator.userLanguage).split('-')[0];
+      var userLang = normalizeLang((navigator.language || navigator.userLanguage).split('-')[0]);
       selectElement.value = userLang;
       selectElement.dispatchEvent(new Event('change'));
     });
   });
 }());
 
+function normalizeLang(lang) {
+  if (lang === 'ja') {
+    return 'jp';
+  }
+
+  if (['en', 'fr', 'jp'].indexOf(lang) === -1) {
+    return 'en';
+  }
+
+  return lang;
+}
+
 function changeLang(lang) {
+  lang = normalizeLang(lang);
   loadTranslations(lang, function(translations) {
     document.querySelectorAll('[data-key]').forEach(el => {
       const key = el.getAttribute('data-key');
+      if (!translations[key]) {
+        return;
+      }
       el.innerHTML = translations[key];
       if (key == "download-button") {
         el.href = translations["resume-url"];
       }
     });
     document.documentElement.setAttribute('lang', lang);
+    setTimeout(function() {
+      if (window.triggerAnimateBoxes) {
+        window.triggerAnimateBoxes();
+      }
+    }, 50);
   });
 }
 
@@ -298,7 +317,12 @@ function loadTranslations(lang, callback) {
           return response.json();
       })
       .then(callback)
-      .catch(error => console.error('Erreur :', error));
+      .catch(error => {
+        console.error('Erreur :', error);
+        if (lang !== 'en') {
+          loadTranslations('en', callback);
+        }
+      });
 }
 
 
