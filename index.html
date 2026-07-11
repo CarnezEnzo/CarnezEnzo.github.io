@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="fr">
 
 <head>
 	<meta charset="utf-8">
@@ -11,6 +11,26 @@
 	<meta name="author" content="CARNEZ Enzo" />
     <meta name="darkreader-lock" content="true">
 
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="CARNEZ Enzo - Full Stack Developer" />
+	<meta property="og:description" content="Développeur full stack .NET / JavaScript recherchant une opportunité au Japon." />
+	<meta property="og:image" content="https://zenrac.github.io/images/avatar.png" />
+	<meta property="og:url" content="https://zenrac.github.io/" />
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Person",
+		"name": "Enzo Carnez",
+		"jobTitle": "Full Stack Developer",
+		"url": "https://zenrac.github.io/",
+		"sameAs": [
+			"https://github.com/Zenrac",
+			"https://www.linkedin.com/in/enzo-carnez/"
+		]
+	}
+	</script>
+
 	<!--Social Media icons-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -19,6 +39,7 @@
 
 	<!-- Place favicon.ico in the root directory -->
 	<link rel="icon" type="image/png" href="logo.png">
+	<link rel="apple-touch-icon" href="logo.png">
 
 	<link href="fonts/quicksand.css" rel="stylesheet">
 	<link href="fonts/playfair.css" rel="stylesheet">
@@ -46,22 +67,21 @@
 <body>
 	<div id="colorlib-page">
 		<div class="container-wrap">
-			<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+			<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" aria-label="Ouvrir/fermer le menu de navigation"><i></i></a>
 			<!-- Side bar -->
 			<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
 				<div class="text-center">
-					<div class="author-img" style="background-image: url(images/avatar.png);"></div>
+					<img class="author-img" src="images/avatar.png" alt="Photo de profil de CARNEZ Enzo" width="120" height="120" style="background-image: url(images/avatar.png);">
 					<h1 id="colorlib-logo"><a data-key="myname" href="https://github.com/Zenrac">CARNEZ Enzo</a></h1>
-					<p><strong></strong></p>
 				</div>
-				<nav id="colorlib-main-menu" role="navigation" class="navbar">
+				<nav id="colorlib-main-menu" role="navigation" class="navbar" aria-label="Navigation principale">
 					<div id="navbar" class="collapse">
 						<ul id="navmenus">
 							<li class="navmenu"><a href="#" data-key="about" data-nav-section="about">Présentation</a></li>
 							<li class="navmenu"><a href="#" data-key="contributions" data-nav-section="contributions">Contributions</a></li>
 							<li class="navmenu"><a href="#" data-key="skills" data-nav-section="skills">Compétences</a></li>
 							<li class="navmenu"><a href="#" data-key="experience" data-nav-section="experience">Expérience</a></li>
-							<select class="selectpickerx" data-width="fit">
+							<select class="selectpickerx" data-width="fit" aria-label="Choisir la langue du site">
 								<option data-content='<span class="fi fi-us"></span> English'>en</option>
 								<option data-content='<span class="fi fi-fr"></span> French'>fr</option>
 								<option data-content='<span class="fi fi-jp"></span> 日本語'>jp</option>
@@ -72,7 +92,7 @@
 			</aside>
 
 			<!-- Github ribbon -->
-			<a href="https://github.com/Zenrac" class="github-corner" aria-label="View source on GitHub">
+			<a href="https://github.com/Zenrac" class="github-corner" aria-label="View source on GitHub" target="_blank" rel="noopener noreferrer">
 				<svg width="80" height="80" viewBox="0 0 250 250" style="fill:rgba(0, 0, 0, 0.05); color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
 					<path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
 					<path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor"
@@ -121,7 +141,15 @@
 												</div>
 												<div>
 													<span data-key="job-languages-label">Langues</span>
-													<strong data-key="job-languages-value">Français, anglais, japonais N4/N3</strong>
+													<strong data-key="job-languages-value">Français, anglais, japonais N3 (en préparation)</strong>
+												</div>
+												<div>
+													<span data-key="job-visa-label">Visa</span>
+													<strong data-key="job-visa-value">Recherche un sponsor pour visa de travail</strong>
+												</div>
+												<div>
+													<span data-key="job-availability-label">Disponibilité</span>
+													<strong data-key="job-availability-value">Disponible immédiatement</strong>
 												</div>
 											</div>
 										</div>
@@ -138,9 +166,9 @@
 								<div class="row">
 									<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
 										<div class="hire">
-											<h2 data-key="endline">Vous recrutez un développeur full stack pour une équipe au Japon ? Mon CV détaille mon parcours et mes projets.</h2>
-											<a target="_blank" data-key="download-button" href="https://drive.google.com/file/d/1_dydH9UpAcr74gPUF26Uzp1qirB-a7pU/view?usp=drive_link" class="btn-hire" style="text-align: center;">Télécharger mon CV</a>
-											<a target="_blank" data-key="linkedin-button" href="https://www.linkedin.com/in/enzo-carnez/" class="btn-hire" style="text-align: center;">Me contacter sur LinkedIn</a>
+											<h2 data-key="endline">Vous recrutez un développeur full stack pour une équipe au Japon ?</h2>
+											<a target="_blank" rel="noopener noreferrer" data-key="download-button" href="https://drive.google.com/file/d/1_dydH9UpAcr74gPUF26Uzp1qirB-a7pU/view?usp=drive_link" class="btn-hire" style="text-align: center;">Télécharger mon CV (Juillet 2026)</a>
+											<a target="_blank" rel="noopener noreferrer" data-key="linkedin-button" href="https://www.linkedin.com/in/enzo-carnez/" class="btn-hire" style="text-align: center;">Me contacter sur LinkedIn</a>
 											<a data-key="email-button" href="mailto:carnezenzo@gmail.com" class="btn-hire" style="text-align: center;">M'envoyer un email</a>
 										</div>
 									</div>
@@ -162,7 +190,7 @@
 						</div>
 						<div class="project-grid">
 							<article class="project-card--wide animate-box" data-animate-effect="fadeInUp">
-									<img class="project-chart" src="https://ghchart.rshah.org/Zenrac" alt="GitHub contribution chart for Zenrac">
+									<img class="project-chart" src="https://ghchart.rshah.org/Zenrac" alt="Graphique de contributions GitHub de Zenrac" width="800" height="115" loading="lazy">
 									<div class="project-card project-card--details">
 										<div class="project-grid">
 											<div class="project-card">
@@ -172,7 +200,7 @@
 												<p data-key="project-jellyfin-scripts-desc">Nouveau repo où je partage de nombreux scripts JS et CSS pour améliorer et personnaliser Jellyfin.</p>
 												<div class="project-tech"><strong data-key="project-jellyfin-scripts-tech">Langages : JS, CSS</strong></div>
 													<div class="project-links project-links--bottom-right">
-														<a href="https://github.com/Zenrac/Zenrac-jellyfin-scripts" target="_blank" class="fa fa-github" aria-label="Voir Jellyfin scripts"></a>
+														<a href="https://github.com/Zenrac/Zenrac-jellyfin-scripts" target="_blank" rel="noopener noreferrer" class="fa fa-github" aria-label="Voir Jellyfin scripts"></a>
 													</div>
 												</div>
 											</div>
@@ -183,7 +211,7 @@
 												<p data-key="project-jellyfin-enhanced-desc">Plus de 10 PR sur ce plugin populaire, couvrant le LINQ, l’UX/UI, de nouvelles fonctionnalités et des corrections de bugs.</p>
 												<div class="project-tech"><strong data-key="project-jellyfin-enhanced-tech">Langages : C#, JS, HTML/CSS</strong></div>
 													<div class="project-links project-links--bottom-right">
-														<a href="https://github.com/n00bcodr/Jellyfin-Enhanced/pulls?q=author%3Azenrac+" target="_blank" class="fa fa-github" aria-label="Voir Jellyfin Enhanced"></a>
+														<a href="https://github.com/n00bcodr/Jellyfin-Enhanced/pulls?q=author%3Azenrac+" target="_blank" rel="noopener noreferrer" class="fa fa-github" aria-label="Voir Jellyfin Enhanced"></a>
 													</div>
 												</div>
 											</div>
@@ -194,7 +222,7 @@
 												<p data-key="project-jellyfin-ani-desc">Ajout d’un nouvel écran pour les utilisateurs, alors que le plugin était configurable uniquement depuis l’interface d’administration.</p>
 												<div class="project-tech"><strong data-key="project-jellyfin-ani-tech">Langages : C#, JS, HTML/CSS</strong></div>
 													<div class="project-links project-links--bottom-right">
-														<a href="https://github.com/vosmiic/jellyfin-ani-sync/pull/204" target="_blank" class="fa fa-github" aria-label="Voir Jellyfin Ani-Sync"></a>
+														<a href="https://github.com/vosmiic/jellyfin-ani-sync/pull/204" target="_blank" rel="noopener noreferrer" class="fa fa-github" aria-label="Voir Jellyfin Ani-Sync"></a>
 													</div>
 												</div>
 											</div>
@@ -205,7 +233,7 @@
 												<p data-key="project-twitch-desc">Petit tweak pour rendre le plugin compatible avec BetterTTV.</p>
 												<div class="project-tech"><strong data-key="project-twitch-tech">Langages : JS</strong></div>
 													<div class="project-links project-links--bottom-right">
-														<a href="https://github.com/tmarenko/twitch_chat_antiban/pull/32" target="_blank" class="fa fa-github" aria-label="Voir Twitch Chat Antiban"></a>
+														<a href="https://github.com/tmarenko/twitch_chat_antiban/pull/32" target="_blank" rel="noopener noreferrer" class="fa fa-github" aria-label="Voir Twitch Chat Antiban"></a>
 													</div>
 												</div>
 											</div>
@@ -325,14 +353,13 @@
 											</div>
 
 											<div class="timeline-label">
-												<h2 data-key="cdi-cgi">CDI chez CGI (pour Michelin)<span>Juillet 2021</span></h2>
+												<h2 data-key="cdi-cgi">CDI chez CGI (pour Michelin)<span>Juillet 2021 - Avril 2026</span></h2>
 												<p><strong class="blue" data-key="csharp-dev">Développeur C#</strong><br>
 													<span data-key="dev-cgi-resume">Prestataire chez un client pour effectuer diverses missions d'informatique "industrielle".</span>
 													<br>- C# (.NET5+, Blazor, MAUI)
 													<br>- Oracle
 													<br>- HTML/CSS (Tailwind)
 												</p>
-												<p></p>
 											</div>
 										</div>
 									</article>
@@ -351,7 +378,6 @@
 													<br>- MongoDB
 													<br>- CQRS
 												</p>
-												<p></p>
 											</div>
 										</div>
 									</article>
@@ -363,14 +389,13 @@
 											</div>
 
 											<div class="timeline-label">
-												<h2><a href="https://www.openstudio.fr/" data-key="training-openstudio" target="_blank">Stage chez OpenStudio <span>Janvier 2020 - Fevrier 2020</span></a></h2>
+												<h2><a href="https://www.openstudio.fr/" data-key="training-openstudio" target="_blank" rel="noopener noreferrer">Stage chez OpenStudio <span>Janvier 2020 - Fevrier 2020</span></a></h2>
 												<p><strong class="blue" data-key="fullstack-dev">Développeur Full Stack</strong><br>
 													<span data-key="openstudio-details">Le projet du stage concernait le développement de plusieurs modules pour des sites web basés sur Thelia, un CMS d'e-commerce développé par OpenStudio.<br>Il a été réalisé à l'aide de:</span>
 													<br>- PHP5 (Symfony2 & Smarty)
 													<br>- JavaScript (JQuery).
 													<br>- HTML/CSS (Bootstrap)
 												</p>
-												<p></p>
 											</div>
 										</div>
 									</article>
@@ -389,7 +414,6 @@
 													<br>- JavaScript (JQuery & VueJS).
 													<br>- HTML/CSS (Bootstrap)
 												</p>
-												<p></p>
 											</div>
 										</div>
 									</article>
@@ -401,10 +425,10 @@
 											</div>
 
 											<div class="timeline-label">
-												<h2><a href="https://watorabot.github.io/" data-key="training-bot" target="_blank">Création d'un bot Discord</a> <span>Juillet 2017 - 2020</span></h2>
+												<h2><a href="https://watorabot.github.io/" data-key="training-bot" target="_blank" rel="noopener noreferrer">Création d'un bot Discord</a></h2>
 												<p><strong class="blue" data-key="main-dev">Développeur principal</strong><br>
 													<span data-key="bot-details">Il s'agit de mon plus grand projet à ce jour, il mobilise quasiment l'ensemble de mes compétences.<br>C'est un projet entièrement asynchrone open source, et possédant de nombreuses dépendances codées par moi-même ou auxquelles j'ai contribués.<br><br>Ce projet est disponible sur mon GitHub.</span>
-												<p></p>
+												</p>
 											</div>
 										</div>
 									</article>
@@ -432,11 +456,9 @@
 										<p style="text-align: center"><strong data-key="end-short">Si vous avez quelconque question, n'hésitez pas à me contacter.<br>Merci d'avoir visité mon site !</strong></p>
 										<div align=center>
 											<p style="font-size: 35px; cursor: default; margin-bottom: 0px;">
-												<a href="https://twitter.com/CarnezEnzo" style="color: white;" class="fa fa-twitter"></a> &nbsp;&nbsp;&nbsp;&nbsp;
-												<a href="https://www.linkedin.com/in/enzo-carnez/" style="color: white;" class="fa fa-linkedin"></a> &nbsp;&nbsp;&nbsp;&nbsp;
-												<a href="mailto:carnezenzo@gmail.com" style="color: white;" class="fa fa-envelope"></a> &nbsp;&nbsp;&nbsp;&nbsp;
-												<!--<a href="https://www.quora.com/profile/CARNEZEnzo" style="color: black;" class="fa fa-quora"></a> &nbsp;&nbsp;&nbsp;&nbsp; -->
-												<a href="https://github.com/zenrac" style="color: white;" class="fa fa-github"></a>
+												<a href="https://www.linkedin.com/in/enzo-carnez/" style="color: white;" class="fa fa-linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"></a> &nbsp;&nbsp;&nbsp;&nbsp;
+												<a href="mailto:carnezenzo@gmail.com" style="color: white;" class="fa fa-envelope" aria-label="Email"></a> &nbsp;&nbsp;&nbsp;&nbsp;
+												<a href="https://github.com/zenrac" style="color: white;" class="fa fa-github" target="_blank" rel="noopener noreferrer" aria-label="GitHub"></a>
 											</p>
 										</div>
 										<p style="text-align: center; margin-bottom: -20px;"><strong>&copy; <span data-key="myname">CARNEZ Enzo</span><span data-key="portfolio"> - Portfolio</span></strong></p>
