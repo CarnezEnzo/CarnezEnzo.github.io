@@ -50,7 +50,6 @@
     "project-airtimes-desc" : "C# Jellyfin plugin that localises series air times from TheTVDB data to improve metadata accuracy.",
     "project-maintenance-desc" : "Maintenance and contributions on existing Jellyfin plugins, including Ani-Sync, Jellyfin Enhanced and KefinTweaks, with fixes, adaptations and media-experience features.",
     "project-watora-desc" : "Historical open-source Discord music bot with an asynchronous architecture, MongoDB, Lavalink and a widely forked community translations repository.",
-    "skills-resume" : "A more concrete overview of my skills, organized by real-world practice instead of percentages.",
     "skill-main-title" : "Main stack",
     "skill-web-title" : "Web & frontend",
     "skill-tools-title" : "Tools & methods",
@@ -73,14 +72,13 @@
     "opensource-dev" : "C# OpenSource Developer",
     "opensource-details" : "The internship project involved developing features for a CRUD application generator in .NET.",
     "openstudio-details" : "The internship project involved developing several modules for websites based on Thelia, an e-commerce CMS developed by OpenStudio.<br>It was carried out using:",
-    "training-openstudio" : "Internship at OpenStudio <span>January 2020 - February 2020</span>",
-    "training-lumiere" : "Internship at Institut Lumière Matière <span>May 2019 - June 2019</span>",
+    "training-openstudio" : "Internship @ OpenStudio <span>January 2020 - February 2020</span>",
+    "training-lumiere" : "Internship @ Institut Lumière Matière <span>May 2019 - June 2019</span>",
     "training-bot" : "Creation of a Discord bot</a> <span>July 2017 - 2020</span>",
     "bot-details" : "This is my largest project to date, it mobilizes almost all of my skills.<br>It is a fully asynchronous open-source project, with many dependencies coded by myself or to which I have contributed.<br><br>This project is available on my GitHub.",
     "main-dev" : "Lead Developer",
     "fullstack-dev" : "Full Stack Developer",
-    "mysubjects" : "My monitoring topics",
-
+    
     "myname": "CARNEZ Enzo",
     "portfolio": " - Portfolio"
 }

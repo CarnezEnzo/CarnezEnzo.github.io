@@ -50,7 +50,6 @@
     "project-airtimes-desc" : "TheTVDBのデータをもとにシリーズの放送時間をローカライズし、メタデータの精度を改善するC#製Jellyfinプラグインです。",
     "project-maintenance-desc" : "Ani-Sync、Jellyfin Enhanced、KefinTweaksなど既存のJellyfinプラグインのメンテナンスと貢献を行っています。修正、調整、メディア体験向けの機能を含みます。",
     "project-watora-desc" : "非同期アーキテクチャ、MongoDB、Lavalinkを使った歴史あるオープンソースDiscord音楽ボットです。翻訳リポジトリも多くフォークされています。",
-    "skills-resume" : "パーセンテージではなく、実務・開発経験に近い形でスキルを整理しています。",
     "skill-main-title" : "主な技術",
     "skill-web-title" : "Web・フロントエンド",
     "skill-tools-title" : "ツール・開発方法",
@@ -79,7 +78,6 @@
     "bot-details" : "これまでで最大のプロジェクトであり、ほぼすべてのスキルを動員しています。<br>完全に非同期のオープンソースプロジェクトで、多くの依存関係は自分で開発したか、貢献しました。<br><br>このプロジェクトはGitHubで公開しています。",
     "main-dev" : "リード開発者",
     "fullstack-dev" : "フルスタック開発者",
-    "mysubjects" : "私の監視トピック",
 
     "myname": "カルネズエンゾ (CARNEZ Enzo)",
     "portfolio": " - ポートフォリオ"
